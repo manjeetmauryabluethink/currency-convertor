@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+        <section id="currency">
+        	<resource>Bluethinkinc_CurrencyConvertor::config_rb_currencyconverter</resource>
+            <group id="freecurrencyapi" sortOrder="55" showInDefault="1" translate="label">
+				<label>Currency Converter External API</label>
+				<field id="api_key" type="obscure" sortOrder="5" showInDefault="1" translate="label">
+					<label>API Key</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<config_path>currency/freecurrencyapi/api_key</config_path>
+				</field>
+				<field id="from" translate="label" type="text" sortOrder="1"   showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>From</label>
+				</field>
+				<field id="to" translate="label" type="text" sortOrder="1"   showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>To</label>
+                </field>
+				<field id="amount" translate="label" type="text" sortOrder="1"   showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Amount</label>
+                </field>
+			</group>
+        </section>
+    </system>
+</config>

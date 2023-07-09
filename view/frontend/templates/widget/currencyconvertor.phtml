@@ -1,0 +1,41 @@
+<style>
+   .container {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+   }
+</style>
+<div class="container">
+   <label for="cars"><b>From:&nbsp;&nbsp;</b></label>
+   <div class="input"><input type="text" value="1"></div>
+   <div class="select">
+      <select id="cars">
+         <option value="gbp">GBP</option>
+         <option value="usd" selected>USD</option>
+      </select>
+   </div>
+</div>
+<br>
+<div class="container">
+   <label for="cars"><b>To:&nbsp;&nbsp;</b></label>
+   <div class="input"><input type="text" value="82.89"></div>
+   <div class="select">
+      <select id="cars">
+         <option value="inr">INR</option>
+         <option value="eur">EUR</option>
+      </select>
+   </div>
+</div>
+<br><br>
+<div class="container">
+   <div class="primary">
+      <button type="submit" class="action submit primary" title="Save"><span><?= $block->
+         escapeHtmlAttr(__('Convert')) ?></span></button>
+   </div>
+</div>
+<br><br>
+<?php  
+   echo "<pre>";
+   print_r($block->getRequestData());
+   echo "</pre>";
+   ?>

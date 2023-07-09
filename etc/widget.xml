@@ -1,0 +1,20 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Bluethinkinc\CurrencyConvertor\Block\Widget\CurrencyConvertor" id="currency_convertor">
+     <label>currency Exchange API</label>
+        <description>This is used for currency convertor API</description>
+        <parameters>
+            <parameter name="currency_option" xsi:type="select" visible="true" required="true" sort_order="20">
+                <label translate="true">Currency Api</label>
+                <options>
+                    <option name="usd" value="usd">
+                        <label>USD</label>
+                    </option>
+                    <option name="inr" value="inr">
+                        <label>INR</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
